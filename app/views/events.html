@@ -1,0 +1,24 @@
+<div class="card events cf">
+
+  <div class="textintro">
+    <h1>MyEvents Dashboard</h1>
+      <p>Create your event</p>
+  </div>
+    
+    <form class="formgroup addevent cf" name="myform" ng-submit="addEvent()" novalidate>
+    
+        <div class="inputwrapper">
+        <input type="text" name="eventname" placeholder="Event name" ng-model="eventname" ng-required="true">
+        </div>
+        <button type="submit" class="btn" ng-disabled="myform.$invalid">+</button>
+    
+    </form>
+    
+    <h2>My Events</h2>
+    <div class="events" ng-repeat="(key, event) in events">
+        <button class="btn" ng-click="deleteEvent(key)">Delete </button> <!-- key = FB hash -->
+    <span class="text">{{ event.name }}</span>
+    </div>
+    
+</div>
+
