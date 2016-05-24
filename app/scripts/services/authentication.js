@@ -72,6 +72,3 @@ angular.module('eventsAppApp')
         return myObject;
        
 }]); 
- 
-
-  
