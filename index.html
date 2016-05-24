@@ -1,0 +1,9 @@
+<!doctype html> <html> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/main.98aee81a.css"> <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css"> </head> <body ng-app="eventsAppApp"> <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <!-- Add your site or application content here --> <header> <nav class="cf" ng-include="'views/nav.html'"></nav> </header> <div class="page"> <div class="userinfo" ng-show="currentUser" ng-controller="RegisterCtrl"> <span class="userinfo">Hi {{ currentUser.firstname }}</span> <a ng-href="#/login" ng-click="logout()">Log-out</a> </div> <main class="cf" ng-view></main> </div> <footer></footer> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <script src="scripts/vendor.cf74a904.js"></script> <!-- ang FB i FB --> <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script> <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script> <script src="scripts/scripts.0ea50bc3.js"></script> </body> </html>
